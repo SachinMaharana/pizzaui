@@ -1,0 +1,30 @@
+{
+  "name": "material-ui",
+  "version": "0.0.131",
+  "description": null,
+  "keywords": [],
+  "main": "index.js",
+  "proxy": "http://35.184.34.164",
+  "dependencies": {
+    "@material-ui/core": "3.9.2",
+    "axios": "0.18.0",
+    "axios-https-proxy-fix": "^0.17.1",
+    "http-proxy-middleware": "^0.19.1",
+    "material-ui": "0.20.2",
+    "react": "16.8.3",
+    "react-addons-css-transition-group": "15.6.0",
+    "react-addons-transition-group": "15.6.0",
+    "react-dom": "16.8.3",
+    "react-select": "2.4.1",
+    "react-transition-group": "1.2.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
