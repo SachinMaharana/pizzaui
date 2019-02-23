@@ -46,6 +46,7 @@ export default class Choice extends React.Component {
   };
   handleOrder = () => {
     const { name, contact, pizzaType, contactType } = this.state;
+    console.log(this.state);
     let url = `http://localhost:5000/buy_pizza?pizzatype=${pizzaType}&contact=${contact}&name=${name}&contactType=${contactType}`;
     axios
       .post(url, null, {
@@ -104,7 +105,7 @@ export default class Choice extends React.Component {
             onChange={this.handleRadioChange}
           >
             <FormControlLabel value="email" control={<Radio />} label="Email" />
-            <FormControlLabel value="phone" control={<Radio />} label="Phone" />
+            <FormControlLabel value="sms" control={<Radio />} label="Phone" />
           </RadioGroup>
           <TextField
             style={{ marginTop: "40px" }}
