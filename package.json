@@ -4,7 +4,6 @@
   "description": null,
   "keywords": [],
   "main": "index.js",
-  "proxy": "http://35.184.34.164",
   "dependencies": {
     "@material-ui/core": "3.9.2",
     "axios": "0.18.0",

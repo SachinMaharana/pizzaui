@@ -46,7 +46,7 @@ export default class Choice extends React.Component {
   };
   handleOrder = () => {
     const { name, contact, pizzaType, contactType } = this.state;
-    let url = `/buy_pizza?pizzatype=${pizzaType}&contact=${contact}&name=${name}&contactType=${contactType}`;
+    let url = `http://localhost:5000/buy_pizza?pizzatype=${pizzaType}&contact=${contact}&name=${name}&contactType=${contactType}`;
     axios
       .post(url, null, {
         "Content-Type": "application/json"
@@ -63,7 +63,7 @@ export default class Choice extends React.Component {
   };
   handleStatus = () => {
     const { name } = this.state;
-    let url = `/get_status?name=${name}`;
+    let url = `http://localhost:5000/get_status?name=${name}`;
     axios
       .get(url, null, {
         "Content-Type": "application/json"
