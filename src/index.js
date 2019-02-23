@@ -1,11 +1,11 @@
 import React from "react";
 import { render } from "react-dom";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import Card from "./Card";
+import PizzaShop from "./PizzaShop";
 
 const App = () => (
   <MuiThemeProvider>
-    <Card />
+    <PizzaShop />
   </MuiThemeProvider>
 );
 
